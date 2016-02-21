@@ -5,6 +5,10 @@
        http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd">
 
     <routeContext id="test-context" xmlns="http://camel.apache.org/schema/spring">
+<!--        <route id="routeOne">
+            <from uri="direct:startOne"/>
+            <to uri="mock:result"/>
+        </route>-->
         <route id="routeTwo">
             <from uri="direct:startTwo"/>
             <to uri="mock:result"/>
